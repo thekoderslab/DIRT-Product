@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dirt-body">
+    <div class="dirt-banner-main">
+        <div class="dirt-container">
+            <a href="https://dirtproductgroup.com/">
+                <img src="https://cdn.shopify.com/s/files/1/0700/2564/2270/files/dirt-logo-white.png" alt=""
+                    class="logo" width="200">
+
+            </a>
+            <div class="d-flex content">
+                <div class="text">
+                    <h1 class="red-bg-text">RUB SOME DIRT ON IT</h1>
+                    <img src="https://cdn.shopify.com/s/files/1/0700/2564/2270/files/dirt-banner-product.png" alt=""
+                        class="dirt-product-responsive">
+                    <h2>DIRT Pain Relieving Gel</h2>
+                    <h3>Experience Fast and Effective Pain Relief With DIRT Pain Relieving Gel</h3>
+                    <h4><i>“I’ve been using DIRT Pain Relieving Gel for a few weeks now and it’s been a lifesaver for
+                            relieving sore muscles after an intense workout. The blend of natural ingredients really do
+                            work wonders.”</i> <span>- JOHN, AVID GYM-GOER</span></h4>
+                    <div class="dirt-new">
+                    </div>
+                </div>
+                <img src="https://cdn.shopify.com/s/files/1/0700/2564/2270/files/dirt-banner-product.png" alt=""
+                    class="dirt-product dirt-product-responsive-none">
+            </div>
+        </div>
+    </div>
+    <div class="dirt-black-bg-text">
+        <div class="dirt-container">
+            <h1>Get back to doing what you love pain-free. Experience the power of DIRT Pian Relieving Gel. With regular
+                use, you can keep your muscle feeling their best and reach peak performance.</h1>
+        </div>
+    </div>
+    <div class="dirt-detailed-section">
+        <div class="dirt-container">
+            <div class="d-flex content">
+                <img src="https://cdn.shopify.com/s/files/1/0700/2564/2270/files/dirt-detailed.png" alt=""
+                    class="detailed-product">
+                <div class="text">
+                    <h2>FAST-ACTING</h2>
+                    <h6>DIRT Pain Relieving Gel is fast-acting, absorbs quickly, and is non-greasy for a smooth
+                        application. Get back to your daily activities with minimal downtime and maximum pain relief.
+                    </h6>
+
+                    <h2>LONG-LASTING PAIN RELIEF</h2>
+                    <h6>Our optimized formula contains a powerful blend of bontanicals known to provide effective pain
+                        relief to sore muscles and joint and back pain.</h6>
+
+                    <h2>SOOTHING INGREDIENTS</h2>
+                    <h6>Made with ingredients like Menthol, Activated Charcoal, and Arnica, which help alleviate pain
+                        and reduce inflammation.</h6>
+                </div>
+            </div>
+
+            <div class="text_">
+                <h1 class="red-bg-text">FOR THOSE WHO ENDURE</h1>
+                <h3>DIRT Pain Relieving Gel is the perfect pain relief and recovery product for hard-working men and
+                    women who demand the best for their wellness and fitness journey. Whether you’re an everyday
+                    athlete, a gym- goer, sports entusiast, or outdoor adventurer, DIRT Pain Relieving Gel will help you
+                    keep doing what you love pain-free.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="addTo-cart-section">
+        <div class="dirt-container">
+            <div class="content">
+                <h2>Experience the power of DIRT Pain Relieving Gel for yourself.</h2>
+
+
+                {% unless collection_handles contains 'coming-soon' %}
+                {% render 'product-form',
+                context: 'product',
+                collection_handles: collection_handles
+                %}
+                {% render 'product-notify-me', product: product %}
+                {% endunless %}
+
+                <h1 class="red-bg-text">RUB SOME DIRT ON IT</h1>
+            </div>
+        </div>
+    </div>

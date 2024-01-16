@@ -1,0 +1,275 @@
+@font-face {
+  font-family: UTM;
+  src: url(UTM-Nokia.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.dirt-body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  color: #040404;
+}
+.dirt-body button {
+  cursor: pointer;
+}
+.dirt-container {
+  max-width: 1336px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 70px;
+}
+.dirt-banner-main {
+  background-image: url(images/dirt-banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+}
+.dirt-banner-main .logo {
+  margin-bottom: 40px;
+  width: 150px;
+}
+.d-flex {
+  display: flex;
+}
+.dirt-banner-main .text {
+  flex: 1;
+  max-width: 685px;
+  margin-right: 30px;
+  color: white;
+}
+.dirt-banner-main h2 {
+  font-size: 58px;
+  font-weight: 600;
+}
+.dirt-banner-main h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.dirt-banner-main h4 {
+  background-color: #4f52569c;
+  padding: 8px 10px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  word-spacing: 3px;
+}
+.dirt-banner-main h4 span {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: UTM;
+}
+.dirt-banner-main .red-bg-text,
+.red-bg-text {
+  font-family: UTM;
+  background-color: #af2026;
+  color: white;
+  font-size: 28px;
+  width: fit-content;
+  margin: 0 0 40px;
+  padding: 6px 10px 9px;
+  line-height: 1.4;
+}
+.dirt-banner-main .dirt-product {
+  width: 300px;
+  margin-left: auto;
+}
+.dirt-addTo-cart-main {
+  background-color: #af2026;
+  width: fit-content;
+  padding: 23px 15px 20px;
+  position: relative;
+}
+.dirt-addTo-cart-main span {
+  font-size: 13px;
+  position: absolute;
+  top: 1px;
+}
+.dirt-addTo-cart-main .quantity {
+  align-items: center;
+  margin-right: 15px;
+  height: 60px;
+}
+.dirt-addTo-cart-main .quantity button {
+  height: 100%;
+  width: 60px;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  border: 1px solid #ebebea;
+  color: #040404;
+}
+.dirt-addTo-cart-main .quantity input {
+  margin: 0;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  border: 0;
+  border: 1px solid #ebebea;
+}
+.dirt-addTo-cart-main .cart-btn {
+  height: 60px;
+  padding: 0 10px;
+  background-color: #040404;
+  color: white;
+  border: 0;
+  font-weight: 500;
+  font-family: UTM;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.dirt-black-bg-text {
+  background-color: #040404;
+  color: white;
+  padding: 30px 0;
+}
+.dirt-black-bg-text h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  word-spacing: 4px;
+  color: white;
+}
+.dirt-detailed-section {
+  padding: 50px 0 100px;
+  background-color: #d8cccc;
+  background-image: url(images/dirt-mountain-bg.png);
+  background-position: bottom right 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dirt-detailed-section .detailed-product {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.dirt-detailed-section h2 {
+  font-family: UTM;
+  color: #af2026;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.dirt-detailed-section h6 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.dirt-detailed-section .text_ {
+  max-width: 500px;
+  width: 100%;
+}
+.dirt-detailed-section h1 {
+  font-family: UTM;
+  font-size: 24px;
+  color: #af2026;
+  margin-bottom: 5px;
+}
+.dirt-detailed-section h3 {
+  background-color: #4f52569c;
+  color: white;
+  padding: 8px 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.addTo-cart-section {
+  background-color: #242424;
+  padding: 30px 0;
+}
+.addTo-cart-section .content {
+  max-width: 500px;
+  width: 100%;
+  color: white;
+}
+.addTo-cart-section h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  word-spacing: 6px;
+  color: white;
+}
+.addTo-cart-section .red-bg-text {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.dirt-detailed-section .content {
+  align-items: center;
+}
+.dirt-detailed-section .content .text {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .dirt-container {
+    padding-inline: 50px;
+  }
+  .dirt-banner-main .content,
+  .dirt-detailed-section .content {
+    flex-direction: column;
+  }
+  .dirt-detailed-section .detailed-product {
+    margin-inline: auto;
+  }
+  .dirt-banner-main .dirt-product {
+    margin-top: 30px;
+    margin-inline: auto;
+  }
+  .dirt-black-bg-text h1 {
+    font-size: 25px;
+  }
+  .dirt-detailed-section .content .text {
+    width: 100%;
+  }
+  .dirt-detailed-section .detailed-product {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .dirt-container {
+    padding-inline: 30px;
+  }
+  .dirt-black-bg-text h1 {
+    font-size: 22px;
+  }
+  .dirt-banner-main .logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .dirt-banner-main .red-bg-text, .red-bg-text,
+  .dirt-banner-main h3,
+  .dirt-black-bg-text h1,
+  .addTo-cart-section .red-bg-text {
+    font-size: 18px;
+  }
+  .dirt-banner-main h2 {
+    font-size: 26px;
+  }
+  .dirt-addTo-cart-main .cart-btn {
+    font-size: 10px;
+  }
+  .dirt-banner-main .dirt-product {
+    width: 200px;
+  }
+  .dirt-detailed-section .detailed-product {
+    width: 100%;
+  }
+  .dirt-detailed-section h1 {
+    font-size: 20px;
+  }
+  .dirt-addTo-cart-main .quantity input {
+    width: 60px;
+  }
+}
